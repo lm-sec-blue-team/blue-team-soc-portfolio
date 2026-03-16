@@ -15,10 +15,9 @@ The lab simulates a realistic Security Operations Center environment to practice
 ## High-Level Architecture
 
 - **Hypervisor:** VMware Workstation
-- **Network segmentation:** pfSense
-- **Windows domain:** Active Directory
-- **Windows endpoints:** event generation and telemetry
-- **Linux servers:** SIEM, EDR, and DFIR tooling
+- **Ubuntu Server 22.04 LTS** - Splunk
+- **Windows 10** - Target machine
+- **Splunk Free 10.2.1**
 - **Attack / analysis machine:** Kali Linux
 
 The architecture is designed to support:
@@ -28,11 +27,9 @@ The architecture is designed to support:
 
 ## Operating Systems
 
-- Windows Server 2019 (Domain Controller)
-- Windows 10 (Workstations)
-- Ubuntu Server (Splunk, Wazuh, MISP, etc.)
-- Kali Linux / Kali Purple
-
+- Windows 10 (Workstation)
+- Ubuntu Server (Splunk)
+- Kali Linux 
 
 ## Core Tools
 
