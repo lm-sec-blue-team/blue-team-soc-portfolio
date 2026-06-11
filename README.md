@@ -112,5 +112,4 @@ blue-team-portfolio/
 ## 📬 Contacto
 
 - Mail: [luismanuel.rodriguez.security@proton.me](mailto:luismanuel.rodriguez.security@proton.me)
-- TryHackMe: [tryhackme.com/p/tu-usuario](#)
-- CyberDefenders: [cyberdefenders.org/p/tu-usuario](#)
+- TryHackMe: [Try Hack Me](https://tryhackme.com/p/LSEO)
