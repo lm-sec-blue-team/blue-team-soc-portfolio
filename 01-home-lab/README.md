@@ -157,10 +157,10 @@ Red Team  ──►  Kali Linux  ──attack──►  Windows 11 (víctima)
 - [x] Kali Linux como atacante
 
 ### Fase 2 — Instrumentación
-- [ ] Instalar y configurar Sysmon en Windows 11
-- [ ] Configurar Splunk Universal Forwarder en Windows 11
-- [ ] Crear índice y sourcetype en Splunk
-- [ ] Primer dashboard de eventos básicos
+- [X] Instalar y configurar Sysmon en Windows 11
+- [X] Configurar Splunk Universal Forwarder en Windows 11
+- [X] Crear índice y sourcetype en Splunk
+- [X] Primer dashboard de eventos básicos
 
 ### Fase 3 — Detección
 - [ ] Reglas de correlación en Splunk (SPL)
