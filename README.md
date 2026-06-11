@@ -1,138 +1,116 @@
-# 🛡️ Blue Team / SOC Analyst Portfolio
+# 🛡️ Blue Team Portfolio — [Luis M. R.]
 
-This repository showcases my practical skills as a SOC Analyst L1, including incident investigations, SIEM detections, home lab engineering, forensics, and network analysis.
-All the work here is based on realistic scenarios built in my own defensive home lab using Splunk, Wazuh, pfSense, Windows & Linux endpoints, and attacker simulations.
+> SOC Analyst L1 | Blue Team | Microsoft Sentinel · Splunk · KQL  
+> Certificaciones: BTL1 · CompTIA Security+ · SC-200 (en curso)
 
-## CTFs Accounts:
+## Perfiles CTFs Accounts:
 - [Let's Defend](https://app.letsdefend.io/user/LuisSEO)
 - [Try Hack Me](https://tryhackme.com/p/LSEO)
 - [BTLO](https://blueteamlabs.online/home/user/96a07ea715160b5eacb1f7)
 - [Cyber Defenders](https://cyberdefenders.org/p/lseo)
 
-## 🔍  What You Will Find Here
-### 1. Home Lab Architecture
+---
 
-A full defensive environment designed to simulate real SOC operations:
+## Sobre este repositorio
 
-- pfSense firewall
-- Wazuh SIEM + agents
-- Splunk instance for log correlation
-- Windows Server + Windows 10 endpoints
-- Kali Linux attacker machine
-- Zeek traffic analysis
+Este repositorio documenta mi progreso práctico en operaciones de seguridad defensiva.
+Incluye writeups de labs reales, playbooks de respuesta a incidentes y queries KQL
+para Microsoft Sentinel y Defender XDR.
 
-📁 Folder: [01-home-lab](/01-home-lab)
+**Stack principal:** Microsoft Sentinel · Splunk · Defender XDR · Wazuh  
+**Plataformas de práctica:** LetsDefend · CyberDefenders  
+**Framework de referencia:** MITRE ATT&CK
 
-### 2. Incident Investigations (Case Studies)
+---
 
-Documented end-to-end cases including:
-- Brute force attacks
-- Malware execution
-- Lateral movement
-- Phishing email analysis
-- Suspicious network traffic
-  
-Each case includes:
+## 📁 Estructura del repositorio
 
-- Evidence collection
-- Log analysis
-- Timeline
-- MITRE ATT&CK mapping
-- Detection queries
-- Recommendations
+```
+blue-team-portfolio/
+├── 01-home-lab/          → Entorno de laboratorio (VMware, topología, herramientas)
+├── 02-writeups-letsdefend/   → Investigaciones de alertas SOC
+│   ├── phishing/
+│   ├── malware/
+│   ├── web-attacks/
+│   └── network-anomalies/
+├── 03-writeups-cyberdefenders/  → Labs DFIR y CTF blue team
+│   ├── network-forensics/
+│   ├── endpoint-forensics/
+│   └── threat-hunting/
+├── 04-playbooks/         → Runbooks de respuesta a incidentes
+└── 05-kql-queries/       → Queries de detección y threat hunting
+    ├── identity/
+    ├── endpoint/
+    ├── email/
+    └── network/
+```
 
-📁 Folder: [02-incident-cases](/02-incident-cases/)
+---
 
-### 3. SIEM Detections (Splunk & Wazuh)
+## 📊 Índice de writeups
 
-Custom detections and queries:
+### LetsDefend
 
-- SPL searches
-- Anomaly detection
-- Correlation rules
-- Wazuh custom rules & decoders
+| # | Nombre | Categoría | Técnica MITRE | Dificultad | Fecha |
+|---|--------|-----------|---------------|------------|-------|
+| 001 | | | | | |
+| 002 | | | | | |
+| 003 | | | | | |
 
-📁 Folder: [03-siem-detections](/03-siem-detections/)
+### CyberDefenders
 
-### 4. Forensics & Network Analysis
+| # | Nombre | Categoría | Técnica MITRE | Dificultad | Fecha |
+|---|--------|-----------|---------------|------------|-------|
+| 001 | | | | | |
+| 002 | | | | | |
+| 003 | | | | | |
 
-Notes and practical investigations:
+---
 
-- Windows forensics
-- Linux forensics
-- PCAP and Zeek analysis
-- HTTP/SSH anomaly detection
+## 📋 Playbooks disponibles
 
-📁 Folder: [04-forensics-and-network](/04-forensics-and-network/)
+| ID | Tipo de ataque | Herramienta SIEM | Última revisión |
+|----|---------------|------------------|-----------------|
+| PB-001 | Phishing | Sentinel / Splunk | |
+| PB-002 | Malware detectado | Sentinel / Splunk | |
+| PB-003 | Brute force | Sentinel / Splunk | |
+| PB-004 | Exfiltración de datos | Sentinel | |
+| PB-005 | Movimiento lateral | Sentinel / Splunk | |
 
-### 5. CTF / Blue Team Writeups
+---
 
-Writeups with SOC focus, not walkthroughs:
+## 🔍 KQL Queries destacadas
 
-- BTLO
-- TryHackMe
-- HackTheBox Blue Team rooms
+| Query | Detecta | Plataforma | MITRE |
+|-------|---------|------------|-------|
+| | | | |
+| | | | |
 
-Emphasis on:
+---
 
-- Detection logic
-- Log sources
-- Attack behavior
-- Defensive recommendations
+## 🧪 Home Lab
 
-📁 Folder: [05-ctf-writeups](/05-ctf-writeups/)
+- **Hipervisor:** VMware Workstation
+- **VMs activas:** Kali Linux · Windows Server · Ubuntu (Wazuh)
+- **SIEM:** Microsoft Sentinel (Azure free tier) · Splunk (trial)
+- **Red:** Host-only VMnet13 (lab aislado) + NAT VMnet8
 
-### 6. Cheatsheets & Quick References
+→ [Ver documentación completa del home lab](./01-home-lab/README.md)
 
-Practical reference guides:
+---
 
-- SPL
-- Windows IR commands
-- Linux IR commands
-- MITRE ATT&CK
-- pfSense
-- Zeek
+## 📜 Certificaciones
 
-📁 Folder: 06-cheatsheets/ [06-cheatsheets](/06-cheatsheets/)
+| Certificación | Emisor | Estado |
+|--------------|--------|--------|
+| BTL1 — Blue Team Level 1 | Security Blue Team | ✅ Obtenida |
+| CompTIA Security+ | CompTIA | ✅ Obtenida |
+| SC-200 — Microsoft Security Operations Analyst | Microsoft | 🔄 En curso |
 
-## 🧠 Technical Skills Demonstrated
+---
 
-- SIEM: Splunk, Wazuh
-- Log analysis
-- Incident response
-- MITRE ATT&CK
-- Network traffic analysis (Wireshark, Zeek)
-- Windows & Linux forensics
-- Threat detection engineering
-- Firewalling (pfSense)
-- Scripting basics (Bash, PowerShell)
+## 📬 Contacto
 
-## 🎯 Current Focus
-
-Strengthening skills for SOC L1 roles through:
-
-- Realistic defensive lab simulations
-- Continuous case-based investigations
-- Improving English for international roles
-Preparation for:
-- Blue Team Level 1 (BTL1)
-- Advanced SIEM engineering
-
-## 🎓 Certifications
-
-## 📬 Contact
-
-If you want to discuss my work or opportunities:
-
-- LinkedIn: https://www.linkedin.com/in/luis-m-rodriguez-soc
-- Email: info@luismanuelrodriguez.es
-
-## ✔️ Why This Portfolio Matters
-
-This repository demonstrates real, hands-on SOC capabilities, not just theoretical knowledge.
-Every investigation and detection rule here represents skills directly applicable to:
-
-- SOC Analyst L1
-- Security Monitoring
-- Threat Detection
-- IR Support Roles
+- Mail: [luismanuel.rodriguez.security@proton.me](luismanuel.rodriguez.security@proton.me)
+- TryHackMe: [tryhackme.com/p/tu-usuario](#)
+- CyberDefenders: [cyberdefenders.org/p/tu-usuario](#)
