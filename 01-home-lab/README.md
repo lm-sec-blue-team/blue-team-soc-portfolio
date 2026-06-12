@@ -63,7 +63,6 @@ Red Team  ──►  Kali Linux  ──attack──►  Windows 11 (víctima)
 - `9997` — Recepción de datos del Universal Forwarder
 - `22` — SSH para administración
 
----
 
 ### 🔴 Kali Linux — Atacante
 
@@ -85,7 +84,6 @@ Red Team  ──►  Kali Linux  ──attack──►  Windows 11 (víctima)
 - Post-explotación: `impacket`, `mimikatz` (vía payload)
 - C2 (opcional): `Covenant`, `Sliver`
 
----
 
 ### 🟡 Windows 11 — Víctima
 
@@ -106,7 +104,6 @@ Red Team  ──►  Kali Linux  ──attack──►  Windows 11 (víctima)
 - Windows Defender **deshabilitado** (entorno de lab controlado)
 - Splunk UF apuntando a la IP del Ubuntu Server (puerto 9997)
 
----
 
 ## Flujo de datos
 
@@ -137,7 +134,6 @@ Red Team  ──►  Kali Linux  ──attack──►  Windows 11 (víctima)
 | Credential Access | LSASS Access | 10 |
 | Execution | Process Create | 1 |
 
----
 
 ## Casos de uso
 
@@ -147,42 +143,5 @@ Red Team  ──►  Kali Linux  ──attack──►  Windows 11 (víctima)
 - [ ] **Persistence** — Creación de tareas programadas, detección por Sysmon
 - [ ] **Exfiltración simulada** — Transferencia de archivos, detección por volumen de red
 
----
-
-## Roadmap
-
-### Fase 1 — Base (actual ✅)
-- [x] Ubuntu Server con Splunk instalado
-- [x] Windows 11 como víctima
-- [x] Kali Linux como atacante
-
-### Fase 2 — Instrumentación
-- [X] Instalar y configurar Sysmon en Windows 11
-- [X] Configurar Splunk Universal Forwarder en Windows 11
-- [X] Crear índice y sourcetype en Splunk
-- [X] Primer dashboard de eventos básicos
-
-### Fase 3 — Detección
-- [ ] Reglas de correlación en Splunk (SPL)
-- [ ] Alertas automáticas para técnicas comunes
-- [ ] Integrar framework MITRE ATT&CK
-
-### Fase 4 — Expansión (futuro)
-- [ ] Añadir servidor Active Directory (Windows Server)
-- [ ] Añadir IDS/IPS (Suricata o Zeek)
-- [ ] Añadir firewall perimetral (pfSense / OPNsense)
-- [ ] Sandbox de malware (FlareVM / REMnux)
-
----
-
-## 📚 Referencias
-
-- [Splunk Docs](https://docs.splunk.com)
-- [Sysmon — Microsoft Sysinternals](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
-- [MITRE ATT&CK](https://attack.mitre.org)
-- [SwiftOnSecurity Sysmon Config](https://github.com/SwiftOnSecurity/sysmon-config)
-- [Metasploit Framework](https://www.metasploit.com)
-
----
 
 *Laboratorio montado con fines educativos. Todo el tráfico malicioso se genera en una red aislada y controlada.*
