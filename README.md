@@ -53,7 +53,7 @@ blue-team-portfolio/
 
 | # | Nombre | Categoría | Técnica MITRE | Dificultad | Fecha |
 |---|--------|-----------|---------------|------------|-------|
-| 001 | | | | | |
+| 001 | SOC251 — Quishing Detected (QR Code Phishing) | Phishing | T1598, T1566, T1204, T1656, T1027 | Media | |
 | 002 | | | | | |
 | 003 | | | | | |
 
